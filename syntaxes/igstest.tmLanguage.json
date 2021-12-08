@@ -1,0 +1,62 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "igstest",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#bools"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.double-slash",
+				"match": "(//.*$)"
+			},{
+				"name": "comment.block.double-slash",
+				"begin": "/\\*",
+				"end": "\\*/"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.igstest",
+				"match": "(\\b(assert|text|TRACE|DEBUG|INFO|WARN|ERROR|FATAL|shout|whisper|ask|start|stop|run|quit|expect|log|log_start|silence|system|sleep|compare|->|block\\.use_pool|block\\.timeout|block\\.multi_check|from|with|and)\\b)"
+			},{
+				"name": "keyword.operator.igstest",
+				"match": "(\\b(==|<|>|<=|>=|~)\\b)"
+			},{
+				"name": "constant.numeric",
+				"match": "(\\b([0-9]+(\\.[0-9]+)*)\\b)"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.igstest",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.igstest",
+					"match": "\\\\."
+				}
+			]
+		},
+		"bools": {
+			"patterns": [
+				{
+					"name": "constant.character.igstest",
+					"match": "\\b(true|false)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.igstest"
+}

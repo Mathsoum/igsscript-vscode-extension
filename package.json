@@ -1,0 +1,25 @@
+{
+    "name": "igstest",
+    "displayName": "igstest",
+    "description": "Language extension for igstest scripting language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "igstest",
+            "aliases": ["igstest", "igstest"],
+            "extensions": [".igstest"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "igstest",
+            "scopeName": "source.igstest",
+            "path": "./syntaxes/igstest.tmLanguage.json"
+        }]
+    }
+}
