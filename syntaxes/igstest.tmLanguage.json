@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "igstest",
+	"name": "igsscript",
 	"patterns": [
 		{
 			"include": "#comments"
@@ -28,10 +28,10 @@
 		},
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.igstest",
+				"name": "keyword.control.igsscript",
 				"match": "(\\b(assert|text|TRACE|DEBUG|INFO|WARN|ERROR|FATAL|shout|whisper|ask|start|stop|run|quit|expect|log|log_start|silence|system|sleep|compare|->|block\\.use_pool|block\\.timeout|block\\.multi_check|from|with|and)\\b)"
 			},{
-				"name": "keyword.operator.igstest",
+				"name": "keyword.operator.igsscript",
 				"match": "(\\b(==|<|>|<=|>=|~)\\b)"
 			},{
 				"name": "constant.numeric",
@@ -39,12 +39,12 @@
 			}]
 		},
 		"strings": {
-			"name": "string.quoted.double.igstest",
+			"name": "string.quoted.double.igsscript",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.igstest",
+					"name": "constant.character.escape.igsscript",
 					"match": "\\\\."
 				}
 			]
@@ -52,11 +52,11 @@
 		"bools": {
 			"patterns": [
 				{
-					"name": "constant.character.igstest",
+					"name": "constant.character.igsscript",
 					"match": "\\b(true|false)\\b"
 				}
 			]
 		}
 	},
-	"scopeName": "source.igstest"
+	"scopeName": "source.igsscript"
 }

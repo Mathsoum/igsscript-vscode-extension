@@ -1,7 +1,8 @@
 {
-    "name": "igstest",
-    "displayName": "igstest",
-    "description": "Language extension for igstest scripting language",
+    "name": "igsscript",
+    "displayName": "igsscript",
+    "description": "Language extension for igsscript scripting language",
+    "repository": "https://github.com/Mathsoum/igsscript-vscode-extension",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.62.0"
@@ -11,15 +12,15 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "igstest",
-            "aliases": ["igstest", "igstest"],
-            "extensions": [".igstest"],
+            "id": "igsscript",
+            "aliases": ["igsscript", "igsscript"],
+            "extensions": [".igsscript"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "igstest",
-            "scopeName": "source.igstest",
-            "path": "./syntaxes/igstest.tmLanguage.json"
+            "language": "igsscript",
+            "scopeName": "source.igsscript",
+            "path": "./syntaxes/igsscript.tmLanguage.json"
         }]
     }
 }

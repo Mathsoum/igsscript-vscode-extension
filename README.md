@@ -1,4 +1,4 @@
-# igstest
+# igsscript
 
 ## Features
 
@@ -20,4 +20,4 @@ None (yet)
 
 ### 1.0.0
 
-Initial release of the igstest extension
+Initial release of the igsscript extension
